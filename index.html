@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Renfe</title>
+    <meta og:title="Formulario de Renfe">
+    <meta og:description="Formulario de Renfe">
+    <meta og:image="https://www.renfe.com/imagenes/renfe-logo.png">
+</head>
+<body>
+
+    <form action="./index.html" method="get">
+        <fieldset>
+            <legend>Compra de billetes de tren</legend>
+            <label for="origen   \t\t">Origen</label>
+
+            <br>
+            <select id="origen" name="origen" required>
+                <option value="" disabled selected>Seleccione su origen</option>
+                <optgroup label="Castilla La Mancha">
+                    <option value="albacete">Albacete</option>
+                    <option value="ciudad-real">Ciudad Real</option>
+                    <option value="cuenca">Cuenca</option>
+                    <option value="guadalajara">Guadalajara</option>
+                    <option value="toledo">Toledo</option>
+                </optgroup>
+                
+            </select>
+
+            <label for="destino">Destino</label>
+            <select>
+                <option value=""> Seleccione destino...</option>
+                <optgroup label="Castilla La Mancha">
+                    <option value="albacete">Albacete</option>
+                    <option value="ciudad-real">Ciudad Real</option>
+                    <option value="cuenca">Cuenca</option>
+                    <option value="guadalajara">Guadalajara</option>
+                    <option value="toledo">Toledo</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Fecha</legend>
+            <label for="fechaIda">Fecha de ida</label>
+            <input type="date" id="fechaIda" name="fechaIda" required />
+            <label for="fechaVuelta">Fecha de vuelta</label>
+            <input type="date" id="fechaVuelta" name="fechaVuelta" />
+
+            <label for="pasajeros">Pasajeros</label>
+            <input type="number" id="pasajeros" name="pasajeros" required />
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias de viaje</legend>
+            <label for="preferencias">Viaje sin enlace</label>
+            <input type="checkbox" id="preferencias" name="preferencias" value="Viaje sin enlace" />
+        </fieldset>
+        <fieldset>
+            <legend>Viaje accesible</legend>
+            <label for="wheelchair">Plaza H disponible</label>
+            <input type="checkbox" id="wheelchair" name="wheelchair" value="SI" />
+            <label for="asistencia">Necesito asistencia</label>
+            <input type="checkbox" id="asistencia" name="asistencia" value="SI" />
+        </fieldset>
+        <fieldset>
+            <legend>Franja horaria</legend>
+            <label for="viaje_ida">Viaje de ida</label>
+            <input type="time" id="viaje_ida" name="viaje_ida" value="SI" />
+            <p>Viaje de ida: Salida a partir de las 00:00</p>
+            <label for="viaje_vuelta">Viaje de vuelta</label>
+            <input type="time" id="viaje_vuelta" name="viaje_vuelta" value="SI" />
+            <p>Viaje de vuelta: Salida a partir de las 00:00</p>
+        </fieldset>
+        <br><br>
+        <button type="submit">Buscar Billete</button>
+
+    </form>
+
+</body>
+</html>
