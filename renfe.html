@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Renfe</title>
+    <link rel="stylesheet" href="stylesRenfe.css">
+</head>
+
+<body>
+    <div class="pagina">
+        <header>
+            <h1>Formulario de Renfe</h1>
+        </header>
+        <div class="contenedor">
+            <nav>
+                <ul>
+                    <li><a href="./">Esto seran los links a otras paginas web</a></li>
+                </ul>
+                
+            </nav>
+            <main class="imagenDeFondo">
+                <form action="./renfe.html" method="get">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <div class="set-label">
+                            <label for="nombreID">Nombre: </label>
+                            <input type="text" name="nombre" id="nombreID">
+                        </div>
+                        <div class="set-label">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" name="apellidos" id="apellidos">
+                        </div>
+                        <div class="set-label">
+                            <label for="telefono">Teléfono de contacto: </label>
+                            <input type="tel" name="telefono" id="telefono">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos del viaje</legend>
+                        <div class="set-label">
+                            <label for="fechaSalida">Fecha de ida:</label>
+                            <input type="date" name="fechaSalida" id="fechaSalida">
+                        </div>
+                        <div class="set-label">
+                            <label for="fechaVuelta">Fecha de vuelta: </label>
+                            <input type="date" name="fechaVuelta" id="fechaVuelta">
+                        </div>
+                        <div class="set-label">
+                            <label for="pasajeros">Pasajeros:</label>
+                            <input type="number" name="pasajeros" id="pasajeros">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferencias del viaje</legend>
+                        <label for="sinTransbordo">Viaje sin transbordo: <input type="checkbox" id="sinTransbordo"
+                                name="sinTransbordo">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Opciones de Accesibilidad</legend>
+                        <label for="discapacitado">Plaza H disponible <input type="checkbox" id="discapacitado"
+                                name="discapacitado"></label>
+                        <label for="asistencia">Necesito asistencia <input type="checkbox" id="asistencia"
+                                name="asistencia"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Franja horaria</legend>
+                        <label for="horaIda">Viaje de ida: <input type="time" id="horaIda" name="horaIda"></label>
+                        <label for="horaVuelta">Viaje de vuelta: <input type="time" id="horaVuelta"
+                                name="horaVuelta"></label>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </main>
+            <aside>
+
+            </aside>
+        </div>
+        <footer><a href="./renfe.html">Politicas y condiciones</a></footer>
+    </div>
+</body>
+
+</html>

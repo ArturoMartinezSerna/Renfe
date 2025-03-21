@@ -1,0 +1,78 @@
+label, input{
+    display: inline-block;
+    margin: 1% 2%;
+}
+
+button {
+    margin: 1%;
+    padding: 1%;
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./images/renfe.png');
+    position: relative;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin-top: 1%;
+}
+
+footer {
+    
+}
+
+.pagina {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+input {
+    margin-left: 5px;
+}
+
+.set-label {
+
+}
+
+header, footer {
+    background: linear-gradient(rgb(173, 9, 127), rgb(255, 182, 193));
+    width: 100%;
+    text-align: center;
+    height: 12vh;
+    color:rgba(50, 26, 63, 0.774);
+}
+
+a {
+    color:rgba(50, 26, 63, 0.774);
+}
+
+nav {
+    height: 76vh;
+    width: 20vw;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5vh 5vw;
+}
+
+main {
+    align-self: center;
+}
